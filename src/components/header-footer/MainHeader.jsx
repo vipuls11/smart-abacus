@@ -8,7 +8,7 @@ const MainHeader = () => {
     <div>
         <div className='flex items-center justify-evenly bg-transparent' style={{ boxShadow: '0px 1px 4px 0px #00000040' }}> 
        <div>
-        <img src={imageUrl || null} alt="Example"  className=''/>
+        <img src={imageUrl || null} alt="Example"  className='logo'/>
        </div>
        <div className='lg:block hidden'>
          <ul className='text-black inline-flex items-center gap-5'>

@@ -1,62 +1,136 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: light dark;
-  --White: rgba(255, 255, 255, 0.87); 
-  font-synthesis: none;
+  font-size: 16px;
+  color: #191919;
   background-color: #fff;
+  color-scheme: light dark;
+  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Custom variables */
+  --White: rgba(255, 255, 255, 0.87);
   --primary-color: #003A6C;
---secondary-color: #F8A323;
---footer-bg-color: #F4F7F7;
---black-color: #333333;
-font-size: 16px;
-color: #191919;
+  --secondary-color: #F8A323;
+  --footer-bg-color: #F4F7F7;
+  --black-color: #333333;
 }
-body{
+
+body {
   font-size: 16px;
 }
-h1,h2,h3,h3,h5,h6{
+
+h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
 }
-.heading_h3{
+
+.heading_h3 {
   font-size: 48px;
   font-weight: 700;
-  /* line-height: initial; */
   text-align: left;
 }
+
 .banner-clip-container::before {
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
-  left:0px;
-  bottom: 0px;
+  left: 0;
+  bottom: 0;
   background-color: var(--primary-color);
   clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
   opacity: 0.9;
   z-index: 1;
 }
-.pagenotfound_content{
+
+/* These were incorrect syntax: rewritten below */
+.bannerStyle {
+  background-color: var(--primary-color);
+  background-image: radial-gradient(58.06% 83.58% at 35.87% 52.55%, rgba(0, 58, 108, 0) 0%, rgba(0, 58, 108, 0.25) 100%);
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--White);
+}
+
+.contentStyle {
+  position: absolute;
+  width: 536px;
+  height: 285px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 20px;
+  text-align: left;
+}
+
+.bannerStip {
+  background: linear-gradient(180deg, #F8A323 0%, rgba(248, 163, 35, 0.7) 73.19%, rgba(248, 163, 35, 0) 96.54%);
+  width: 41.75px;
+  height: 504.61px;
+  transform: rotate(-10deg);
+  position: absolute;
+  right: 20px;
+  top: 12%;
+  z-index: 3;
+}
+.custom_button{
+    padding: 8px 18px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.pagenotfound_content {
   font-size: 24px;
   font-weight: 600;
   color: var(--black-color);
 }
 
+/* Responsive Styles */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Styles for tablets */
-
+  /* Tablet-specific styles can go here */
 }
 
 @media only screen and (max-width: 767px) {
-  /* Styles for mobile devices */
- body{
-  font-size: 12px;
+  body {
+    font-size: 10px;
+  }
+  .bannerStyle{
+           width: 260px;
+        height: 160px;
+  }
+  .heading_h3 {
+  font-size: 18px;
+}
+.contentStyle {
+    width: 250px;
+        height: 170px;
+}
+.custom_button{
+    padding: 4px 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.logo{
+   width: 50%;
+}
+.bannerStip{
+      position: absolute;
+    right: 16px;
+        top: 12%;
+    width: 20px;
+    height: 123px;
 }
 }
