@@ -52,9 +52,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* These were incorrect syntax: rewritten below */
 .bannerStyle {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color);
   background-image: radial-gradient(58.06% 83.58% at 35.87% 52.55%, rgba(0, 58, 108, 0) 0%, rgba(0, 58, 108, 0.25) 100%);
-  clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%); */
   width: 700px;
   height: 600px;
   position: absolute;
@@ -99,7 +99,37 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Responsive Styles */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Tablet-specific styles can go here */
+  body {
+    font-size: 12px;
+  }
+  .bannerStyle{
+           width: 360px;
+        height: 260px;
+  }
+  .heading_h3 {
+  font-size: 24px;
+}
+.contentStyle {
+            width: 350px;
+        height: 180px;
+}
+.custom_button{
+    padding: 4px 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.logo{
+   width: 70%;
+}
+.bannerStip{
+      position: absolute;
+    right: 16px;
+        top: 12%;
+    width: 20px;
+    height: 123px;
+    transform: rotate(-11deg);
+}
 }
 
 @media only screen and (max-width: 767px) {
@@ -132,5 +162,6 @@ h1, h2, h3, h4, h5, h6 {
         top: 12%;
     width: 20px;
     height: 123px;
+    transform: rotate(-11deg);
 }
 }
