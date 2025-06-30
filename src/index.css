@@ -37,6 +37,17 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 
+.heading_content {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+}
+.heading_details{
+  font-size: 42px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
 .banner-clip-container::before {
   content: '';
   position: absolute;
@@ -62,7 +73,9 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   color: var(--White);
 }
-
+.para-text{
+  font-size: 18px;
+}
 .contentStyle {
   position: absolute;
   width: 536px;
@@ -96,7 +109,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: var(--black-color);
 }
-
+.text-secondarycolor{
+  color: var(--secondary-color);
+}
 /* Responsive Styles */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {
@@ -124,10 +139,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .bannerStip{
       position: absolute;
-    right: 16px;
+            right: 14px;
         top: 12%;
-    width: 20px;
-    height: 123px;
+        width: 26px;
+        height: 220px;
     transform: rotate(-11deg);
 }
 }
