@@ -69,7 +69,7 @@ const Home = () => {
            Smart Abacus <strong>offers</strong> tailored courses to boost <strong>mental calculation, concentration</strong>, and <strong>problem-solving skills</strong>.
             </p>
         </div>
-        <div className="grid lg:grid-cols-3 `grid-cols-1">
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-3">
           {
             OurCources.map((courses, index)=>{
               const {id,image,dotimg,coursename} = courses
