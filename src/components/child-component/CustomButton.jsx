@@ -7,7 +7,7 @@ const CustomButton = ({ label, color, onClick }) => {
   };
 
   return (
-    <button style={buttonStyle} onClick={onClick} className='custom_button'>
+    <button style={buttonStyle} onClick={onClick} className='custom_button my-2'>
       {label}
     </button>
   );

@@ -2,6 +2,8 @@ import React from "react";
 import Banner from "./child-component/Banner";
 import { imageGame, imageGirl } from "../assets/common/config";
 import { OurCources } from "../assets/common/ourcourses";
+import CustomButton from "./child-component/CustomButton";
+import { benifit } from "../assets/common/benifit";
 
 
 const Home = () => {
@@ -72,19 +74,56 @@ const Home = () => {
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-3">
           {
             OurCources.map((courses, index)=>{
-              const {id,image,dotimg,coursename} = courses
+              const {id,image,dotimg,coursename, course, text, btn} = courses
               return(
                  <div className="course_level" key={id}>
           <img src={image || null} alt={coursename} className="w-full" />
           <div className="courseStyle course-clip-container opacity-90">
             <span className="courcseStip"></span>
           </div>
-          <div className="course_div absolute bottom-0 py-5 right-0 w-full h-48 grid place-content-end px-4 place-items-end">
+          <div className="course_div group absolute bottom-0 py-5 right-0 w-full h-full grid place-content-end px-4 place-items-end">
                  <img src={dotimg || null} alt="Dots"  />
           <h2 className="course_heading" title={coursename}>{coursename}</h2>
+         <div className="group-hover:block hidden w-60 text-left">
+           <h4 className="para-text text-[var(--White)]">{course}</h4>
+          <p className="course-info text-[var(--White)]">{text}</p>
+          <a href="#"><CustomButton color='--secondary-color' label={btn} /></a>
+         </div>
           </div>
          
         </div>
+              )
+            })
+          }
+       
+        </div>
+        </div>
+      </section>
+
+        <section >
+        <div className="py-10 lg:px-14 px-5 bg-[var(--footer-bg-color)]">
+        <div>
+           <h3 className="heading_details text-center">
+            Benefit<span className="relative">
+               s of<span className="absolute -bottom-1  left-0 h-1 w-1/4 bg-[var(--secondary-color)]"></span> Abacus 
+                 
+              </span>
+            </h3>
+            <p className="my-5 text-sm">
+              Unlock faster <strong>calculations, sharper memory, and unstoppable confidence</strong> with the power of Japanese Abacus. A fun and <br /> proven way to <strong>boost</strong> academic <strong>success</strong>!
+            </p>
+        </div>
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3">
+          {
+            benifit.map((benifits, index)=>{
+              const {id,image,text} = benifits
+              return(
+              <div className="group" key={id}>
+  <div className="bg-[var(--secondary-color)] text-[var(--primary-color)] group-hover:text-[var(--White)] group-hover:bg-[var(--primary-color)] p-10 h-60 text-center flex flex-col items-center justify-center">
+    <img src={image || null} alt={text} className="" />
+    <h3 className="beifit-text mt-5">{text}</h3>
+  </div>
+</div>
               )
             })
           }

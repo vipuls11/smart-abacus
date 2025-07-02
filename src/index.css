@@ -82,6 +82,13 @@ font-size: 32px;
 .para-text{
   font-size: 18px;
 }
+.course-info{
+  font-size: 16px;
+}
+.beifit-text{
+  font-size: 20px;
+  font-weight: 500;
+}
 .contentStyle {
   position: absolute;
   width: 536px;
