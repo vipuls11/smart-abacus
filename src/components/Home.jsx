@@ -4,6 +4,7 @@ import { imageGame, imageGirl } from "../assets/common/config";
 import { OurCources } from "../assets/common/ourcourses";
 import CustomButton from "./child-component/CustomButton";
 import { benifit } from "../assets/common/benifit";
+import { Instruction } from "../assets/common/instruction";
 
 
 const Home = () => {
@@ -124,6 +125,43 @@ const Home = () => {
     <h3 className="beifit-text mt-5">{text}</h3>
   </div>
 </div>
+              )
+            })
+          }
+       
+        </div>
+        </div>
+      </section>
+
+           <section >
+        <div className="py-10 lg:px-14 px-5">
+        <div>
+           <h3 className="heading_details text-center">
+            Meet Our Exipe<span className="relative">rt Aba
+                <span className="absolute -bottom-1  left-0 h-1 w-full bg-[var(--secondary-color)]"></span> 
+              </span>cus Instructors!
+              
+            </h3>
+            <p className="my-5 text-sm">
+           Our <strong>experienced and certified</strong> abacus teachers are dedicated to nurturing young <strong>minds</strong>, enhancing mental math <strong>skills</strong>, <br /> and making <strong>learning</strong> fun and <strong>interactive</strong>.
+            </p>
+        </div>
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-3">
+          {
+            Instruction.map((courses, index)=>{
+              const {id,image, name, course } = courses
+              return(
+                 <div className="course_level" key={id}>
+          <img src={image || null} alt={name} className="w-full" />
+          <div className="courseStyle course-clip-container opacity-90">
+            <span className="courcseStip"></span>
+          </div>
+          <div className="course_div group absolute bottom-0 py-5 right-0 w-full h-full grid place-content-end px-4 place-items-end">
+          <h2 className="course_heading" title={name}>{name}</h2>
+          <p className="course-info  text-[var(--White)]">{course}</p>
+          </div>
+         
+        </div>
               )
             })
           }
