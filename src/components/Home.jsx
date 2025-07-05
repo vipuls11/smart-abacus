@@ -1,10 +1,12 @@
 import React from "react";
 import Banner from "./child-component/Banner";
-import { imageGame, imageGirl } from "../assets/common/config";
+import { imageChildgame, imageGame, imageGirl, imagePaperplan } from "../assets/common/config";
 import { OurCources } from "../assets/common/ourcourses";
 import CustomButton from "./child-component/CustomButton";
 import { benifit } from "../assets/common/benifit";
 import { Instruction } from "../assets/common/instruction";
+import Slider from "./child-component/Slider";
+import FAQ from "./child-component/FAQ";
 
 
 const Home = () => {
@@ -168,6 +170,29 @@ const Home = () => {
        
         </div>
         </div>
+      </section>
+
+      <section className="py-10 lg:px-14 px-5 relative">
+        <img src={imageChildgame} alt="Child Game" className="absolute left-14 top-32"/>
+        <img src={imagePaperplan} alt="Paper Plan" className="absolute right-0 top-28"/>
+      <div>
+           <h3 className="heading_details text-center ">
+           What Parents & Stude 
+             <span className="relative">
+             nts Say
+                <span className="absolute -bottom-1  left-0 h-1 w-full bg-[var(--secondary-color)]"></span> 
+              </span> About Smart Abacus!
+             
+            </h3>
+            <p className="my-5 text-sm">
+            Our students and parents <strong>love</strong> the <strong>transformational</strong> impact of Abacus <strong>learning</strong>! From faster calculations to better <strong>focus</strong> <br />and <strong>confidence</strong>, hear how Smart Abacus is shaping <strong>young minds</strong> for <strong>success</strong>.
+            </p>
+        </div>
+        <Slider/>
+      </section>
+
+      <section>
+        <FAQ/>
       </section>
     </div>
   );

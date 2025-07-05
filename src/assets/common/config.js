@@ -4,4 +4,7 @@ const imageBanner = "/img/banner.jpg"
 const imageNotfound = "/img/pagenotfound.png"
 const imageGame = "/img/game-logo.png"
 const imageGirl = "/img/card_image.png"
-export {imageUrl, imageIos, imageBanner, imageNotfound, imageGame, imageGirl}
+const imageQuotes = "/img/quots.png"
+const imageChildgame = "/img/child-game.png"
+const imagePaperplan = "/img/paperplan.png"
+export {imageUrl, imageIos, imageBanner, imageNotfound, imageGame, imageGirl, imageQuotes, imageChildgame, imagePaperplan}
