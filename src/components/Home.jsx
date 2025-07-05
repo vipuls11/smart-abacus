@@ -191,7 +191,7 @@ const Home = () => {
         <Slider/>
       </section>
 
-      <section>
+      <section className="p-10 lg:p-14  relative">
         <FAQ/>
       </section>
     </div>
