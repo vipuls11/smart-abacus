@@ -16,7 +16,7 @@ function Accordion({ category }) {
   
       <div className="accordion">
         {category.map((item, i) => (
-          <div key={item.id} className='item'>
+          <div key={item.id} className='item' index={item.course}>
             <div className={`title ${selected === i ? 'active' : ''}`} onClick={() => toggle(i)}>
               <h2>{item.Question}</h2>
               <span>{selected === i ? '-' : '+'}</span>

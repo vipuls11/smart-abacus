@@ -5,7 +5,7 @@ import Accordion from './Accordion';
 
 
 const FAQ = () => {
-    const [category, setCategory] = useState(accordion);
+    const [category, setCategory] = useState(accordion.filter(item=>item.course === "General Questions"));
     const [activeBtn, setActiveBtn] = useState('General Questions'); // State to track active button
     // const uniqueNumbers = [...new Set(dataList)];
 
@@ -28,7 +28,9 @@ const FAQ = () => {
     let word=e.target.value;
     setActiveBtn(word); // Set active button value
     if(word === "General Questions"){
-      setCategory(accordion)
+      //setCategory(accordion)
+      const filtered = accordion.filter(item=>item.course === "General Questions");
+      setCategory(filtered)
     }
     else if(word === "Course & Learning Questions") {
       const filtered = accordion.filter(item=>item.course === "Course & Learning Questions");
