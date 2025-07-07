@@ -7,4 +7,5 @@ const imageGirl = "/img/card_image.png"
 const imageQuotes = "/img/quots.png"
 const imageChildgame = "/img/child-game.png"
 const imagePaperplan = "/img/paperplan.png"
-export {imageUrl, imageIos, imageBanner, imageNotfound, imageGame, imageGirl, imageQuotes, imageChildgame, imagePaperplan}
+const conactBG = "/img/contact-bg-abacus.png"
+export {imageUrl, imageIos, imageBanner, imageNotfound, imageGame, imageGirl, imageQuotes, imageChildgame, imagePaperplan , conactBG}

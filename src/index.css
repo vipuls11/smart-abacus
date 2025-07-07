@@ -46,7 +46,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-align: left;
 }
-
+.office{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.office-details-li{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 18px;
+}
 .heading_content {
   font-size: 24px;
   font-weight: 600;
@@ -54,6 +64,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .heading_details{
   font-size: 42px;
+  font-weight: 700;
+  /* text-align: left; */
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.contactheading_details{
+  font-size: 36px;
   font-weight: 700;
   /* text-align: left; */
   text-transform: uppercase;
@@ -99,6 +116,11 @@ font-size: 32px;
 .beifit-text{
   font-size: 20px;
   font-weight: 500;
+}
+.contact_details{
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--secondary-color);
 }
 .contentStyle {
   position: absolute;
