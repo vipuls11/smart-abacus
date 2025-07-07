@@ -173,8 +173,8 @@ const Home = () => {
       </section>
 
       <section className="py-10 lg:px-14 px-5 relative">
-        <img src={imageChildgame} alt="Child Game" className="absolute left-14 top-32"/>
-        <img src={imagePaperplan} alt="Paper Plan" className="absolute right-0 top-28"/>
+        <img src={imageChildgame} alt="Child Game" className="absolute lg:left-14 -left-5 lg:top-32 top-72  -z-10"/>
+        <img src={imagePaperplan} alt="Paper Plan" className="absolute right-0 top-28 -z-10"/>
       <div>
            <h3 className="heading_details text-center ">
            What Parents & Stude 

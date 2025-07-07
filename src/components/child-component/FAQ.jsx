@@ -45,8 +45,8 @@ const FAQ = () => {
   return (
     <>
  
-        <div className='flex gap-5'>          
-        <div className='flex flex-col float-left w-2/5'>
+        <div className='lg:flex gap-5'>          
+        <div className='lg:flex flex-col float-left lg:w-2/5'>
         <div>
            <h3 className="heading_details text-left ">
            Frequently Asked <br />
@@ -62,12 +62,12 @@ const FAQ = () => {
         </div>
             {/* <button value="General Questions" onClick={handleBtns}  className={`${activeBtn === 'General Questions' ? 'active' : ''} faq text-left py-2 px-4 flex justify-between`}>All <IoIosArrowRoundForward className='icon' /></button> */}
             {
-                uniqueArr.map((btn)=><button value={btn.course} onClick={handleBtns} className={`${activeBtn === btn.course ? 'active' : ''} faq text-left py-2 px-4 flex justify-between`}>{btn.course} <IoIosArrowRoundForward className='icon' /></button>)
+                uniqueArr.map((btn)=><button value={btn.course} onClick={handleBtns} className={`${activeBtn === btn.course ? 'active' : ''} faq text-left py-2 px-4 flex justify-between w-full`}>{btn.course} <IoIosArrowRoundForward className='icon' /></button>)
             }
            
           </div>
  
-          <div className='w-full'>
+          <div className='w-full lg:mt-0 mt-3' >
             {/* {category.map((item) => (
               <div key={item.id}>
                 <div className='flex gap-5'>
