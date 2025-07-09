@@ -5,6 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { PiBuildingOfficeBold } from "react-icons/pi";
 import { SlLocationPin } from "react-icons/sl";
 import { MdOutlinePhone, MdOutlineMail } from "react-icons/md";
+import CustomButton from './child-component/CustomButton';
 
 const Contact = () => {
   return (
@@ -48,7 +49,7 @@ const Contact = () => {
       </section>
 
       <section>
-              <div className="flex lg:px-14 px-5 text-left">
+              <div className="grid lg:grid-cols-2 gap-5 lg:px-14 px-5 text-left mb-10">
                 <div>
                 <div>
                   <h3 className="office">
@@ -82,9 +83,23 @@ const Contact = () => {
                   </ul>
                 </div>
                 </div>
-                <div className="">
+                <div className="contact-main">
+                  <h5 className='contact-us'>Let's talk with us</h5>
                   <form action="">
-                    <label htmlFor="" className='text-5xl font-extrabold'>Contact Us</label>
+                    <div className='grid grid-cols-2 gap-5 mb-3'>
+                    <input type="text" placeholder='First Name'  className='contact-input'/>
+                    <input type="text" placeholder='Last Name'  className='contact-input'/>
+                    </div>
+                    <div className='mb-3'>
+                    <input type="email" placeholder='Email'  className='contact-input'/>
+                    </div>
+                      <div className='mb-3'>
+                      <input type="text" placeholder='Phone Number'  className='contact-input'/>
+                      </div>
+                      <div className='mb-3'>                     
+                      <textarea name="" id="" cols="30" rows="5" className='contact-input'></textarea>
+                      </div>
+                      <CustomButton label="Submit" color='--primary-color' width="100%"/>
                   </form>
                 </div>
               </div>

@@ -1,9 +1,10 @@
 // components/CustomButton.jsx
 import React from 'react';
 
-const CustomButton = ({ label, color, onClick }) => {
+const CustomButton = ({ label, color, onClick, width}) => {
   const buttonStyle = {
     backgroundColor: `var(${color})`,
+    width: width || 'auto',
   };
 
   return (
