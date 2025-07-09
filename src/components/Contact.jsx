@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <div>
       <div className=''>
-      <ul className='text-black inline-flex text-left items-center gap-5  py-3 lg:w-[70%] m-auto lg:px-0 px-5'>
+      <ul className='text-black inline-flex text-left items-center gap-5  py-3 w-full lg:px-14 px-5'>
                     <li>
                         <NavLink to="/" >Home</NavLink>
                     </li>
@@ -19,7 +19,7 @@ const Contact = () => {
                     <IoIosArrowForward />
                     </li>
                     <li>
-                        <NavLink to="/achievements" >Achievement</NavLink>
+                        <NavLink to="/contact" >Contact</NavLink>
                     </li>
                    
                 </ul>
@@ -40,7 +40,7 @@ const Contact = () => {
               tact Us
             </h3>
 
-            <p className='my-5'>Have <strong>questions</strong> about our courses or want to <strong>experience</strong> the power of Smart Abacus? We’re here to assist <br /> you! Whether you need information about our programs, want to enroll your child, or book a <strong>free trial</strong> <br /> class, feel free to <strong>reach out</strong> to us. Our team is always <strong>ready to guide</strong> you on your learning journey.</p>
+            <p className='my-5'>At <strong>Smart Abacus</strong>, we take immense pride in our students' outstanding accomplishments in <strong>national and international</strong> abacus <strong>competitions</strong>. Their dedication, hard work, and passion for <strong>mental math</strong> have led them to secure top positions in prestigious tournaments, making us a leading institution in abacus <strong>education</strong>.</p>
        </div>
        <div>
          <img src={conactBG} alt="Contact"  />
