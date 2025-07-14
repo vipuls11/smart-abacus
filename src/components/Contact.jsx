@@ -43,7 +43,7 @@ const Contact = () => {
             <p className='my-5'>At <strong>Smart Abacus</strong>, we take immense pride in our students' outstanding accomplishments in <strong>national and international</strong> abacus <strong>competitions</strong>. Their dedication, hard work, and passion for <strong>mental math</strong> have led them to secure top positions in prestigious tournaments, making us a leading institution in abacus <strong>education</strong>.</p>
        </div>
        <div>
-         <img src={conactBG} alt="Contact"  />
+         <img src={conactBG} alt="Contact"  className='contact-bg'/>
        </div>
        </div>
       </section>

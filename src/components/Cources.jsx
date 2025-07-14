@@ -8,6 +8,9 @@ import { IoMdStopwatch } from "react-icons/io";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { LuVolume2 } from "react-icons/lu";
 import { TbNotes } from "react-icons/tb";
+import TabButton from "./child-component/TabButton";
+import { RiCheckDoubleLine } from "react-icons/ri";
+import { HiOutlineLink } from "react-icons/hi";
 
 const Cources = () => {
   return (
@@ -41,17 +44,23 @@ const Cources = () => {
               Learning!
             </p>
           </div>
-          <div className="grid lg:grid-cols-3  grid-cols-1 gap-3">
+          <div className="grid lg:grid-cols-3  grid-cols-1 gap-10">
             <div className="col-span-2">
-              <video className="h-full w-full rounded-lg" controls autoPlay>
+              <video className="rounded-lg" controls autoPlay>
                 <source
                   src="https://docs.material-tailwind.com/demo.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
               </video>
+              <div>
+                <TabButton/> 
+              </div>
             </div>
-            <div className="course-vedio-details">
+            <div>
+
+         
+            <div className="course-vedio-details ">
               <div>
                <div className="flex">
                <h3 className="contact-us flex gap-3 items-center"><FaIndianRupeeSign /> 3999</h3>
@@ -69,7 +78,46 @@ const Cources = () => {
                 </ul>
               </div>
             </div>
+            <div className="course-vedio-details my-10">
+              <div>
+              <h3 className="office text-left mb-3">
+              <span className="relative">
+              What
+                <span className="absolute -bottom-1  left-0 h-1 w-full bg-[var(--secondary-color)]"></span>
+              </span>
+               You Will Achieve?
+            </h3>
+
+                <ul className="space-y-4 my-5">
+                  <li className="flex gap-3 items-center"><RiCheckDoubleLine /> Confidence in basic arithmetic calculations</li>
+                  <li className="flex gap-3 items-center"><RiCheckDoubleLine /> Improved hand-eye coordination & concentration</li>
+                  <li className="flex gap-3 items-center"><RiCheckDoubleLine /> Faster number recognition & problem-solving skills</li>
+                  <li className="flex gap-3 items-center"><RiCheckDoubleLine /> Mental visualization of numbers without an abacus</li>
+                  <li className="flex gap-3 items-center"><RiCheckDoubleLine /> A strong foundation for advanced abacus learning</li>
+                </ul>
+              </div>
+            </div>
+            </div>
           </div>
+          
+          <section>
+            <div className="grid grid-cols-2 bg-[var(--primary-color)] h-40 items-center p-10 w-full place-content-center">
+                <div>
+                <h3 className="heading_details text-center" style={{color:'var(--secondary-color)'}}>
+              <span className="relative">
+              Boo
+                <span className="absolute -bottom-3  left-0 h-1 w-full bg-[var(--secondary-color)]"></span>
+               
+              </span>
+              k a Free Trial Class
+            </h3>
+                </div>
+                <div className="text-center grid justify-items-center">
+                  <p className="text-white mb-3">Experience the power of Abacus learning before enrolling!</p>
+                  <a href="" className="text-white bg-[var(--secondary-color)] flex gap-1 p-2 items-center w-fit"><HiOutlineLink /> Book Your Free Trial Now</a>
+                </div>
+            </div>
+          </section>
         </div>
       </section>
     </div>

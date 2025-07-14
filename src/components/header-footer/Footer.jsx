@@ -6,6 +6,7 @@ import { FaPhoneVolume,} from "react-icons/fa6";
 const Footer = () => {
   const currentYear = new Date().getFullYear()
   return (
+    <footer>
    <div className='bg-[var(--footer-bg-color)] p-14'>
     <div className='lg:flex flex-row gap-5 pb-2 border-b border-[var(--black-color)]'> 
      <div>
@@ -100,6 +101,7 @@ const Footer = () => {
       </ul>
     </div>
    </div>
+   </footer>
   )
 }
 

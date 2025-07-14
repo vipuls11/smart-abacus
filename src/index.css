@@ -118,6 +118,11 @@ font-size: 32px;
 .course-info{
   font-size: 16px;
 }
+.timing{
+  font-size: 14px;
+  font-weight: 400;
+
+}
 .beifit-text{
   font-size: 20px;
   font-weight: 500;
@@ -164,6 +169,10 @@ font-size: 32px;
   color: var(--secondary-color);
 }
 
+.contact-bg{
+  width: auto !important;
+  max-width: unset !important;
+}
 .course-clip-container::before {
      content: '';
     position: absolute;
@@ -225,7 +234,36 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.75%, rgba(0, 0, 0, 0.425
   box-shadow: 1px 1px 6px 0px #00000033;
   background-color: var(--footer-bg-color);
   padding: 20px;
+  height: fit-content;
 }
+.skill-lists{
+  padding: 8px;
+  background-color: var(--footer-bg-color);
+  box-shadow: 0px 1px 1px 0px #0000001A;
+ 
+}
+/* .......tab Button...... */
+.job-btn{
+  background-color: transparent;
+   color: var(--black-color);
+   font-size: 16px;
+   margin: 0px 10px;
+   outline: none;
+   border:none;
+}
+
+.active-btn{
+   border-bottom: 4px solid var(--secondary-color);
+   color:var(--black-color);
+}
+
+.tabbutton{
+  border-bottom: 2px solid var(--footer-bg-color);
+}
+.job-details{
+  font-size: 16px;
+}
+/* .......tab Button...... */
 /* Responsive Styles */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {

@@ -44,7 +44,7 @@ export const Achievement = () => {
             </p>
           </div>
           <div>
-            <img src={conactBG} alt="Contact" />
+            <img src={conactBG} alt="Contact"  className="contact-bg"/>
           </div>
         </div>
       </section>
