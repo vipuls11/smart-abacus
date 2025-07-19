@@ -58,7 +58,7 @@ const Contact = () => {
                     Head
                       <span className="absolute -bottom-1  left-0 h-1 w-full bg-[var(--secondary-color)]"></span>
                     </span>
-                    Office
+                      Office
                   </h3>
                   <ul className='office-details space-y-2 my-5'>
                     <li className='office-details-li'><PiBuildingOfficeBold /> Smart Abacus Learning Center</li>
