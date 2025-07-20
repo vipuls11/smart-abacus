@@ -26,6 +26,20 @@
 body {
   font-size: 16px;
 }
+.slider-container .slick-slide {
+  padding: 0 10px; /* Add spacing between slides */
+}
+.camera-profile{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+align-items: center;
+text-align: center;
+background: #05050599;
+opacity: 0.8;
+}
 .faq.active {
   background-color: var(--primary-color);
   color: white;

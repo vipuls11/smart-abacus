@@ -3,6 +3,7 @@ import { IoIosArrowForward } from 'react-icons/io'
 import { NavLink } from 'react-router-dom'
 import { conactBG, imageGame, imageGirl } from '../assets/common/config'
 import { RiCheckDoubleLine } from 'react-icons/ri'
+import CardSlider from './child-component/CardSlider'
 
 const About = () => {
   return (
@@ -128,6 +129,28 @@ With a well-structured Abacus curriculum, we aim to strengthen the brain’s cog
           <div className="" style={{ width: "100%" }}>
             <img src={imageGirl || null} alt="Example" className="w-full" />
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="py-10 lg:px-14 px-5">
+        <div>
+            <h3 className="heading_details text-center">
+              Meet Our Exipe
+              <span className="relative">
+                rt Aba
+                <span className="absolute -bottom-1  left-0 h-1 w-full bg-[var(--secondary-color)]"></span>
+              </span>
+              cus Instructors!
+            </h3>
+            <p className="my-5 text-sm">
+              Our <strong>experienced and certified</strong> abacus teachers are
+              dedicated to nurturing young <strong>minds</strong>, enhancing
+              mental math <strong>skills</strong>, <br /> and making{" "}
+              <strong>learning</strong> fun and <strong>interactive</strong>.
+            </p>
+          </div>
+        <CardSlider/>
         </div>
       </section>
     </div>

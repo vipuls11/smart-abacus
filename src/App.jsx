@@ -9,6 +9,8 @@ import Contact from './components/Contact';
 import Cources from './components/Cources';
 import { Achievement } from './components/Achievement';
 import Pagenotfound from './Pagenotfound';
+import Profile from './components/Profile';
+import ForgetPassword from './Auth/ForgetPassword';
 
 
 
@@ -34,6 +36,8 @@ function App() {
         <Route path="/courses" element={<Cources />} />
         <Route path="/achievements" element={<Achievement/>} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/forgot-password" element={<ForgetPassword />} />
         <Route path="*" element={<Pagenotfound/>} />
       </Routes>
      </main>

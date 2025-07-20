@@ -39,7 +39,7 @@ const Slider = () => {
                                     <img src={imageQuotes} alt="Quotes" />
                                     <p className='quotes text-[var(--primary-color)]'>{feedback}</p>
                                      <div className='flex items-start justify-between ml-2 mt-7'>
-                    <h3 className='title'>{name}</h3>
+                    <h3 className='title title-content'>{name}</h3>
                      <div className='flex gap-3'>
                         <button className="next border bottom-1 border-black" onClick={nextSlide}>
                         <IoIosArrowRoundBack className='icon' />
